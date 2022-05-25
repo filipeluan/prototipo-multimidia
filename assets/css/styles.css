@@ -69,7 +69,7 @@ p {
 }
 
 .main-bg {
-    background-image: url('https://i.pinimg.com/originals/d0/83/11/d083111196f0b6bcaa5154a557a01677.jpg');
+    background-image: url('https://cdn.discordapp.com/attachments/978481186286485554/978835257476382750/kingdomAsset_1.png');
     background-size:cover;
     background-position: center center;
     color: var(--white-color);
@@ -158,11 +158,13 @@ p {
 
 .youtube-content {
     max-width: 80rem;
+    margin-top: 10rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
     text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
 .intro-content {
@@ -196,24 +198,14 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(255, 2, 2, 0.15);
 }
 
 .grid h3 {
     font-size: 2rem;
     position: relative;
-    padding-left: 5rem;
     padding-bottom: 3rem;
-}
-
-.grid h3::before {
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    position: absolute;
-    font-size: 8rem;
-    font-style: italic;
-    top: -4rem;
-    left: -2rem;
-    transform: rotate(5deg);
 }
 
 .gallery-img {
@@ -314,21 +306,6 @@ p {
 
 .close-menu {
     display: none;
-}
-
-.back-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: var(--white-color);
-    width: 7rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: var(--primary-color);
-    border: 0.1rem solid var(--tertiary-color);
 }
 
 @media (max-width: 800px) {
