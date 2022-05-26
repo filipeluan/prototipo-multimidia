@@ -17,7 +17,8 @@
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
-        <div class="main-content menu-content">
+        <div class="menu-content">
+            <img class="logo-menu" width="200" height="100" src="assets/img/logo.gif" alt="logo Forum of Kingdom animada"/>
             <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#home">FORUM OF KINGDOM</a>
             </h1>
@@ -25,7 +26,7 @@
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#youtube">YOUTUBE</a></li>
-                    <li><a href="#intro">INTRO</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
                     <li><a href="#comunidade">COMUNIDADE</a></li>
                     <li><a href="#gallery">GALLERY</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -49,8 +50,8 @@
         </div>
     </section>
 
-    <section id="intro" class="intro bg-2 section">
-        <div class="main-content intro-content">
+    <section id="sobre" class="sobre bg-2 section">
+        <div class="main-content sobre-content">
             <h2>Rise Of Kingdoms</h2>
             <p>Rise of Kingdoms é um MMO para dispositivos móveis de estratégia em tempo real inspirado na história. Das
                 profundezas da obscuridade ao topo da lenda, você será o autor da história da sua civilização. Você será
@@ -72,19 +73,23 @@
             <h2 class="grid-main-heading">TÓPICOS DA COMUNIDADE</h2>
             <p class="grid-description"></p>
 
-            <div class="grid">
-                <article>
-                    <h3>TIER LIST COMANDANTE</h3>
-                    <p><img src="assets/img/TIER LIST.png"></p>
-                </article>
-                <article>
+            <div class="grid-comunidade">
+                <div>
+                    <a target="_blank" href="https://tiermaker.com/list/video-games/rise-of-kingdoms-commanders-2021-370894/2204081">
+                        <h3>TIER LIST COMANDANTE</h3>
+                    <p>
+                        <img class="grid-topics" src="assets/img/TIER LIST.png" class="grid-imgs">
+                    </p>
+                    </a>     
+                </div>
+                <div>
                     <h3>EVENTOS</h3>
-                    <p><img src="assets/img/eventos.png"></p>
-                </article>
-                <article>
+                    <p><img class="grid-topics" src="assets/img/eventos.png" class="grid-imgs"></p>
+                </div>
+                <div>
                     <h3>CIVILIZAÇÕES</h3>
-                    <p><img src="assets/img/civilizacao.png"></p>
-                </article>
+                    <p><img class="grid-topics" src="assets/img/civilizacao.png" class="grid-imgs"></p>
+                </div>
             </div>
         </div>
     </section>
@@ -92,32 +97,20 @@
     <section id="gallery" class="gallery bg-2 section">
         <div class="main-content grid-content">
             <h2 class="grid-main-heading">GALLERY</h2>
-            <p class="grid-description">Algumas imagens de rise of kingdoms.</p>
+            <p class="grid-description">Algumas imagens de rise of kingdoms para você baixar e utilizar como WallPapper.</p>
 
             <div class="grid">
                 <div class="gallery-img">
-                    <img src="https://lilithimage.lilithcdn.com/roc/en/pc/imgs/v2/pic2.png"
-                        alt="imagem Rise of kingdoms retirada do site oficial do jogo" />
+                    <a target="_blank" href="/assets/img/wallpaper-vikings.png" download><img src="assets/img/wallpaper-vikings.png"
+                        alt="imagem editada de rise of kingdoms pelo canva" /></a>
                 </div>
                 <div class="gallery-img">
-                    <img src="https://lilithimage.lilithcdn.com/roc/en/pc/imgs/v2/pic1.png"
-                        alt="imagem Rise of kingdoms retirada do site oficial do jogo" />
+                    <a target="_blank" href="/assets/img/wallpaper-gandark.png" download><img src="assets/img/wallpaper-gandark.png"
+                        alt="imagem editada de rise of kingdoms pelo canva" /></a>
                 </div>
                 <div class="gallery-img">
-                    <img src="https://lilithimage.lilithcdn.com/roc/en/pc/imgs/v2/pic3new.jpg"
-                        alt="imagem Rise of kingdoms retirada do site oficial do jogo" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://lilithimage.lilithcdn.com/roc/en/pc/imgs/v2/pic4.png"
-                        alt="imagem Rise of kingdoms retirada do site oficial do jogo" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://lilithimage.lilithcdn.com/roc/en/pc/imgs/v2/pic5.png"
-                        alt="imagem Rise of kingdoms retirada do site oficial do jogo" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://lilithimage.lilithcdn.com/roc/en/pc/imgs/v2/pic1.png"
-                        alt="imagem Rise of kingdoms retirada do site oficial do jogo" />
+                    <a target="_blank" href="/assets/img/wallpaper-vikings-gandark.png" download><img src="assets/img/wallpaper-vikings-gandark.png"
+                        alt="imagem editada de rise of kingdoms pelo canva" /></a>
                 </div>
             </div>
         </div>
@@ -127,7 +120,7 @@
         <div class="main-content">
             <div class="contact-form">
                 <fieldset class="form-grid">
-                    <legend>Contate-me</legend>
+                    <legend>Envie seu suporte</legend>
 
                     <div class="form-group">
                         <label for="first-name">Primeiro Nome:</label>
@@ -160,10 +153,16 @@
         </div>
     </section>
 
+    <section id="video" class="video bg-2 section">
+        <div class="main-content">
+            <iframe class="youtube" src="https://www.youtube.com/embed/rIz8HL4qhXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
     <footer id="footer" class="footer bg-2">
         <p><a target="_blank" href="https://www.instagram.com/_gandark/">Feito com <span class="heart">❤</span> por Gandark</a></p>
     </footer>
 
 </body>
-
 </html>
