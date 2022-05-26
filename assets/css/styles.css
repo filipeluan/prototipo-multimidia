@@ -69,7 +69,7 @@ p {
 }
 
 .main-bg {
-    background-image: url('https://cdn.discordapp.com/attachments/978481186286485554/978835257476382750/kingdomAsset_1.png');
+    background-image: url('/assets/img/kingdom.png');
     background-size:cover;
     background-position: center center;
     color: var(--white-color);
